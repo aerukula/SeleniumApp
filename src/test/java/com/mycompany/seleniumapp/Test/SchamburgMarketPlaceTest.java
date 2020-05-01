@@ -221,7 +221,7 @@ public class SchamburgMarketPlaceTest {
         //driver.findElement(By.xpath("//img[@alt='Parks']")).click();
     }*/
 
-    @Test
+   /* @Test
     public void testBusiness() throws InterruptedException {
 
         driver.get("https://www.schaumburgmarketplace.com");
@@ -235,7 +235,7 @@ public class SchamburgMarketPlaceTest {
         driver.findElement(By.xpath("//input[@id='wpbdp-bar-view-listings-button']")).click();
         Thread.sleep(3000);
         driver.findElement(By.linkText("New York Life Insurance Company")).click();
-    }
+    }*/
 
     @Test
     public void tsetPar() throws InterruptedException {
@@ -273,7 +273,7 @@ public class SchamburgMarketPlaceTest {
 
     }
 
-    @Test
+   /* @Test
     public void testbacktop() throws InterruptedException {
         driver.get("https://www.schaumburgmarketplace.com");
         Thread.sleep(3000);
@@ -286,6 +286,6 @@ public class SchamburgMarketPlaceTest {
         js.executeScript("window.scrollBy(0,2000)");
         driver.findElement(By.xpath("//*[@id='page-footer']/div/div/span/span[2]")).click();
 
-    }
+    }*/
 
 }
