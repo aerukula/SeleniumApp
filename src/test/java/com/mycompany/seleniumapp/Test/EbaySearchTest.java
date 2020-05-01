@@ -74,7 +74,7 @@ public class EbaySearchTest {
 
     }*/
 
-    @Test
+   /* @Test
     public void testRegistration() {
         driver.get("https://www.ebay.com/");
         driver.findElement(By.linkText("register")).click();
@@ -99,7 +99,7 @@ public class EbaySearchTest {
         // File destfile=new File("C:\\new pic123");
         //  FileUtils.copyFile(src,destfile);
 
-    }
+    }*/
 
     @Test
     public void testusingMouse() throws InterruptedException {
