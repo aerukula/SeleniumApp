@@ -81,7 +81,7 @@ public class TourismWebsiteTest {
         airLine.selectByVisibleText("Unified Airlines");
         driver.findElement(By.xpath("//input[@src='/images/forms/continue.gif']")).click();
     }
-    @Test
+   /* @Test
     public void testRadio(){
         driver.get("http://newtours.demoaut.com/");
         driver.findElement(By.name("userName")).sendKeys("mercury");
@@ -89,5 +89,5 @@ public class TourismWebsiteTest {
         driver.findElement(By.name("login")).click();
         driver.findElements(By.linkText("Type:")).get(1).click();
         
-    }
+    }*/
 }
