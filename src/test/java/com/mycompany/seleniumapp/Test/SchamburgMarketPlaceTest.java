@@ -63,7 +63,7 @@ public class SchamburgMarketPlaceTest {
     //
     // @Test
     // public void hello() {}
-    @Test
+    /* @Test
     public void testEventsSmp() {
         //driver.get("https://www.schaumburgmarketplace.com");
         //driver.findElement(By.linkText("Business Directory")).click();
@@ -84,9 +84,9 @@ public class SchamburgMarketPlaceTest {
         }
         driver.findElement(By.xpath("//input[@aria-label='Submit Events search']")).click();
 
-    }
+    }*/
 
-    @Test
+ /*@Test
     public void testEvents1() {
         driver.get("https://www.schaumburgmarketplace.com/events/");
         WebDriverWait wait = new WebDriverWait(driver, 5);
@@ -98,8 +98,7 @@ public class SchamburgMarketPlaceTest {
             System.out.println("hi");
         }
         driver.findElement(By.xpath("//li[@class='tribe-events-nav-previous']//a[@rel='prev']")).click();
-    }
-
+    }*/
     @Test
     public void testEvents2() {
 
@@ -109,7 +108,7 @@ public class SchamburgMarketPlaceTest {
         e.submit();
     }
 
-    @Test
+    /* @Test
     public void testEvents3() {
 
         driver.get("https://www.schaumburgmarketplace.com");
@@ -127,9 +126,8 @@ public class SchamburgMarketPlaceTest {
             System.out.println("hi");
         }
         driver.findElement(By.xpath("//*[contains(@href,'offers')]")).click();
-    }
-
-    @Test
+    }*/
+   /* @Test
     public void testEvents4() {
         driver.get("https://www.schaumburgmarketplace.com");
         WebDriverWait wait = new WebDriverWait(driver, 50);
@@ -143,9 +141,9 @@ public class SchamburgMarketPlaceTest {
         }
         driver.findElement(By.xpath("//*[@id='menu-item-949']/a//parent::li")).click();
 
-    }
+    }*/
 
-    @Test
+  /*  @Test
     public void testEvents5() {
         driver.get("https://www.schaumburgmarketplace.com");
         WebDriverWait wait = new WebDriverWait(driver, 50);
@@ -157,9 +155,9 @@ public class SchamburgMarketPlaceTest {
             System.out.println("hi");
         }
         driver.findElement(By.xpath("//a[@aria-current='page']")).click();
-    }
+    }*/
 
-    @Test
+  /*  @Test
     public void testEvents6() {
         driver.get("https://www.schaumburgmarketplace.com");
         WebDriverWait wait = new WebDriverWait(driver, 50);
@@ -181,7 +179,7 @@ public class SchamburgMarketPlaceTest {
         //System.out.println("done");
         driver.findElement(By.xpath("//a[@href='https://www.schaumburgmarketplace.com/offers/']")).click();
 
-    }
+    }*/
     WebDriver wait;
 
     @Test
@@ -210,7 +208,7 @@ public class SchamburgMarketPlaceTest {
 
     }
 
-    @Test
+   /* @Test
     public void testServicesSelect() throws InterruptedException {
         driver.get("https://www.schaumburgmarketplace.com");
         Thread.sleep(5000);
@@ -221,7 +219,7 @@ public class SchamburgMarketPlaceTest {
         //  Thread.sleep(5000); 
 
         //driver.findElement(By.xpath("//img[@alt='Parks']")).click();
-    }
+    }*/
 
     @Test
     public void testBusiness() throws InterruptedException {
@@ -283,10 +281,10 @@ public class SchamburgMarketPlaceTest {
         action.moveToElement(driver.findElement(By.xpath("//li[@id='menu-item-172']/a"))).build().perform();
         driver.findElement(By.xpath("//li[@id='menu-item-171']/a")).click();
         Thread.sleep(3000);
-JavascriptExecutor js = (JavascriptExecutor) driver;
-        
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
         js.executeScript("window.scrollBy(0,2000)");
-      driver.findElement(By.xpath("//*[@id='page-footer']/div/div/span/span[2]")).click();
+        driver.findElement(By.xpath("//*[@id='page-footer']/div/div/span/span[2]")).click();
 
     }
 

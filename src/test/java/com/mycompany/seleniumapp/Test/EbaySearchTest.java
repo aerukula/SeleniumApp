@@ -62,7 +62,7 @@ public class EbaySearchTest {
     //
     // @Test
     // public void hello() {}
-    @Test
+  /* @Test
     public void searchBarEbay() {
         driver.get("https://www.ebay.com/");
         driver.findElement(By.xpath("//input[@type='text']")).sendKeys("fashion");
@@ -72,7 +72,7 @@ public class EbaySearchTest {
         Select category = new Select(driver.findElement(By.xpath("//select[@class='gh-sb ']")));
         category.selectByVisibleText("Books");
 
-    }
+    }*/
 
     @Test
     public void testRegistration() {

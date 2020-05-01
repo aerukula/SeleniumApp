@@ -19,22 +19,22 @@ import static org.junit.Assert.*;
  * @author shekh
  */
 public class ListTest {
-    
+
     public ListTest() {
     }
-    
+
     @BeforeClass
     public static void setUpClass() {
     }
-    
+
     @AfterClass
     public static void tearDownClass() {
     }
-    
+
     @Before
     public void setUp() {
     }
-    
+
     @After
     public void tearDown() {
     }
@@ -45,39 +45,37 @@ public class ListTest {
     // @Test
     // public void hello() {}
     @Test
-    public void testList(){
+    public void testList() {
         //int i;
         double d;
         String s;
-        String[] strArray={"ABC","XYZ"};
+        String[] strArray = {"ABC", "XYZ"};
         // It is index bound
         // Its size is immutable/limited
         // Datastructure collections
         // Performance
         // Implement collections -interface
-         // List - Collection & Array
-         // Collection - Objects as elements
-         List<String> friends;
-         friends=new ArrayList();
-         friends.add("Paul");
-         friends.add("Tom");
-         friends.add("Bob");
-         System.out.println(friends.size());
-         for(int i=0;i<friends.size();i++){
-             System.out.println(friends.get(i));
-         }
-         for(Object o:friends){ 
-             System.out.println(o);
-         }
-         //friends.contains("Tom");
-         friends.remove("Bob");
-         friends.add("Rob");
-         for(Object o:friends){ 
-               System.out.println(o);
-         }
-         
-        
-    }
-    
-         }
+        // List - Collection & Array
+        // Collection - Objects as elements
+        List<String> friends;
+        friends = new ArrayList();
+        friends.add("Paul");
+        friends.add("Tom");
+        friends.add("Bob");
+        System.out.println(friends.size());
+        for (int i = 0; i < friends.size(); i++) {
+            System.out.println(friends.get(i));
+        }
+        for (Object o : friends) {
+            System.out.println(o);
+        }
+        //friends.contains("Tom");
+        friends.remove("Bob");
+        friends.add("Rob");
+        for (Object o : friends) {
+            System.out.println(o);
+        }
 
+    }
+
+}
