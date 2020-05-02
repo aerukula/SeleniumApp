@@ -127,7 +127,7 @@ public class SchamburgMarketPlaceTest {
         }
         driver.findElement(By.xpath("//*[contains(@href,'offers')]")).click();
     }*/
-   /* @Test
+ /* @Test
     public void testEvents4() {
         driver.get("https://www.schaumburgmarketplace.com");
         WebDriverWait wait = new WebDriverWait(driver, 50);
@@ -143,7 +143,7 @@ public class SchamburgMarketPlaceTest {
 
     }*/
 
-  /*  @Test
+ /*  @Test
     public void testEvents5() {
         driver.get("https://www.schaumburgmarketplace.com");
         WebDriverWait wait = new WebDriverWait(driver, 50);
@@ -157,7 +157,7 @@ public class SchamburgMarketPlaceTest {
         driver.findElement(By.xpath("//a[@aria-current='page']")).click();
     }*/
 
-  /*  @Test
+ /*  @Test
     public void testEvents6() {
         driver.get("https://www.schaumburgmarketplace.com");
         WebDriverWait wait = new WebDriverWait(driver, 50);
@@ -208,7 +208,7 @@ public class SchamburgMarketPlaceTest {
 
     }
 
-   /* @Test
+    /* @Test
     public void testServicesSelect() throws InterruptedException {
         driver.get("https://www.schaumburgmarketplace.com");
         Thread.sleep(5000);
@@ -221,7 +221,7 @@ public class SchamburgMarketPlaceTest {
         //driver.findElement(By.xpath("//img[@alt='Parks']")).click();
     }*/
 
-   /* @Test
+ /* @Test
     public void testBusiness() throws InterruptedException {
 
         driver.get("https://www.schaumburgmarketplace.com");
@@ -236,7 +236,6 @@ public class SchamburgMarketPlaceTest {
         Thread.sleep(3000);
         driver.findElement(By.linkText("New York Life Insurance Company")).click();
     }*/
-
     @Test
     public void tsetPar() throws InterruptedException {
         driver.get("https://www.schaumburgmarketplace.com");
@@ -273,7 +272,7 @@ public class SchamburgMarketPlaceTest {
 
     }
 
-   /* @Test
+    /* @Test
     public void testbacktop() throws InterruptedException {
         driver.get("https://www.schaumburgmarketplace.com");
         Thread.sleep(3000);
@@ -287,5 +286,33 @@ public class SchamburgMarketPlaceTest {
         driver.findElement(By.xpath("//*[@id='page-footer']/div/div/span/span[2]")).click();
 
     }*/
+    @Test
+    public void testse() throws InterruptedException {
+        driver.get("https://www.schaumburgmarketplace.com");
+        Thread.sleep(3000);
+        Actions action = new Actions(driver);
+        //action.moveToElement(driver.findElement(By.xpath("//nav[@class='main-menu-container']//a[contains(text(),'Services')]"))).build().perform();
+        Thread.sleep(3000);
+        action.moveToElement(driver.findElement(By.xpath("//li[@id='menu-item-169']/a"))).build().perform();
+        driver.findElement(By.xpath("//li[@id='menu-item-559']/a")).click();
+        Thread.sleep(3000);
+
+        //driver.findElement(By.xpath("//ul[@id='bbp-forum-618']/li[1]/a")).click();
+        driver.findElement(By.linkText("Education")).click();
+         JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        js.executeScript("window.scrollBy(0,4000)");
+                Thread.sleep(3000);
+
+        driver.findElement(By.xpath("//a[@class='page-numbers']")).click();
+    }
+   /* @Test
+    public void tsetSE() throws InterruptedException{
+        driver.get("https://www.schaumburgmarketplace.com");
+                Thread.sleep(3000);
+           Select dropdown=new Select(driver.findElement(By.partialLinkText("ABOUT US")));
+
+    dropdown.selectByIndex(0);
+            }   */      
 
 }

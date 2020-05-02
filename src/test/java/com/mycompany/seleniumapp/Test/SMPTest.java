@@ -13,6 +13,7 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
@@ -58,6 +59,8 @@ public class SMPTest {
         driver.get("https://www.schaumburgmarketplace.com");
         Thread.sleep(5000);
         driver.findElement(By.partialLinkText("ABOUT US")).click();
+        Thread.sleep(3000);
+        driver.navigate().back();
 
     }
 
@@ -67,10 +70,11 @@ public class SMPTest {
         Thread.sleep(5000);
         Actions action = new Actions(driver);
         action.moveToElement(driver.findElement(By.partialLinkText("ABOUT US"))).build().perform();
-        Thread.sleep(5000);
-        driver.findElement(By.xpath("//*[@id='menu-item-413']/a")).click();
-        Thread.sleep(5000);
+        Thread.sleep(3000);
+        driver.findElement(By.xpath("//li[@id='menu-item-413']/a")).click();
+        Thread.sleep(3000);
         JavascriptExecutor js = (JavascriptExecutor) driver;
+        Thread.sleep(3000);
         js.executeScript("window.scrollBy(0,700)");
     }
 
@@ -85,7 +89,10 @@ public class SMPTest {
         driver.findElement(By.id("wpforms-52819-field_0-last")).sendKeys("Head");
         driver.findElement(By.id("wpforms-52819-field_3")).sendKeys("1111111111");
         driver.findElement(By.xpath("//input[@type='email']")).sendKeys("potato@gmail.com");
+        driver.findElement(By.xpath("//input[@id='wpforms-52819-field_1-secondary']")).sendKeys("potato@gmail.com");
         driver.findElement(By.xpath("//textarea[@id='wpforms-52819-field_2']")).sendKeys("Testing The Website");
+        Thread.sleep(5000);
+        driver.findElement(By.xpath("//input[@type='number']")).sendKeys("5");
         driver.findElement(By.xpath("//button[@type='submit']")).click();
 
     }
@@ -101,9 +108,11 @@ public class SMPTest {
         driver.findElement(By.xpath("//input[@type='text']")).sendKeys("Potato");
         driver.findElement(By.id("wpforms-52819-field_0-last")).sendKeys("Head");
         driver.findElement(By.id("wpforms-52819-field_3")).sendKeys("111");
-        driver.findElement(By.xpath("//input[@type='email']")).sendKeys("potato@gmail.com");
+        driver.findElement(By.xpath("//input[@id='wpforms-52819-field_1']")).sendKeys("potato@gmail.com");
+        driver.findElement(By.xpath("//input[@id='wpforms-52819-field_1-secondary']")).sendKeys("potato@gmail.com");
         driver.findElement(By.xpath("//textarea[@id='wpforms-52819-field_2']")).sendKeys("Testing The Website");
-        Thread.sleep(3000);
+        Thread.sleep(5000);
+        driver.findElement(By.xpath("//input[@type='number']")).sendKeys("5");
         driver.findElement(By.xpath("//button[@type='submit']")).click();
         TakesScreenshot screen = (TakesScreenshot) driver;
         File file = new File("C:\\qa\\screenshot.png");
@@ -137,6 +146,9 @@ public class SMPTest {
         driver.findElement(By.partialLinkText("Facebook")).click();
         String str = driver.getTitle();
         System.out.println(str);
+        //Alert alert = driver.switchTo().alert();
+        //String alertMessage = driver.switchTo().alert().getText();
+        // System.out.println(alertMessage);
 
     }
 
