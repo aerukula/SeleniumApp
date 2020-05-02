@@ -146,6 +146,7 @@ public class SMPTest {
         driver.findElement(By.partialLinkText("Facebook")).click();
         String str = driver.getTitle();
         System.out.println(str);
+        //driver.switchTo().alert().dismiss();
         //Alert alert = driver.switchTo().alert();
         //String alertMessage = driver.switchTo().alert().getText();
         // System.out.println(alertMessage);
