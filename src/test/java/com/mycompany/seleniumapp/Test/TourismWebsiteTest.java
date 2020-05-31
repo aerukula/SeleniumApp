@@ -13,6 +13,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.junit.Ignore;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.Select;
@@ -55,6 +56,7 @@ public class TourismWebsiteTest {
     //
     // @Test
     // public void hello() {}
+    
     @Test
     public void testLogin() {
         driver.get("http://newtours.demoaut.com/");
